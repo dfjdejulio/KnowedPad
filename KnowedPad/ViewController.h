@@ -24,7 +24,6 @@
 
 @property IBOutlet UITextView *output;
 @property IBOutlet UITextField *input;
-@property NSNumber *fontSize;
 
 - (IBAction)execute:(id)sender;
 
