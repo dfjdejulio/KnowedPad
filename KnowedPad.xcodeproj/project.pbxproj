@@ -10,6 +10,7 @@
 		471615B1192D0125001A551B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 471615B0192D0125001A551B /* JavaScriptCore.framework */; };
 		471615B3192D012D001A551B /* libKnowed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 471615B2192D012D001A551B /* libKnowed.a */; };
 		471615B6192D01C1001A551B /* KBBLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 471615B5192D01C1001A551B /* KBBLayoutConstraint.m */; };
+		4774CD29192D541F008B526F /* UITextView+BILogTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4774CD28192D541F008B526F /* UITextView+BILogTextView.m */; };
 		477B9E1D192CF39E007EB250 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477B9E1C192CF39E007EB250 /* Foundation.framework */; };
 		477B9E1F192CF39F007EB250 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477B9E1E192CF39F007EB250 /* CoreGraphics.framework */; };
 		477B9E21192CF39F007EB250 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477B9E20192CF39F007EB250 /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 		471615B2192D012D001A551B /* libKnowed.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKnowed.a; path = "../Knowed/build/Debug-iphoneos/libKnowed.a"; sourceTree = "<group>"; };
 		471615B4192D01B9001A551B /* KBBLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBBLayoutConstraint.h; sourceTree = "<group>"; };
 		471615B5192D01C1001A551B /* KBBLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBBLayoutConstraint.m; sourceTree = "<group>"; };
+		4774CD27192D5417008B526F /* UITextView+BILogTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+BILogTextView.h"; sourceTree = "<group>"; };
+		4774CD28192D541F008B526F /* UITextView+BILogTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+BILogTextView.m"; sourceTree = "<group>"; };
 		477B9E19192CF39E007EB250 /* KnowedPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowedPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		477B9E1C192CF39E007EB250 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		477B9E1E192CF39F007EB250 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -125,6 +128,8 @@
 		477B9E22192CF39F007EB250 /* KnowedPad */ = {
 			isa = PBXGroup;
 			children = (
+				4774CD27192D5417008B526F /* UITextView+BILogTextView.h */,
+				4774CD28192D541F008B526F /* UITextView+BILogTextView.m */,
 				471615B4192D01B9001A551B /* KBBLayoutConstraint.h */,
 				471615B5192D01C1001A551B /* KBBLayoutConstraint.m */,
 				477B9E2B192CF39F007EB250 /* AppDelegate.h */,
@@ -264,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4774CD29192D541F008B526F /* UITextView+BILogTextView.m in Sources */,
 				477B9E36192CF39F007EB250 /* ViewController.m in Sources */,
 				477B9E2D192CF39F007EB250 /* AppDelegate.m in Sources */,
 				471615B6192D01C1001A551B /* KBBLayoutConstraint.m in Sources */,
