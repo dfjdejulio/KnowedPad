@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		471615B1192D0125001A551B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 471615B0192D0125001A551B /* JavaScriptCore.framework */; };
+		471615B3192D012D001A551B /* libKnowed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 471615B2192D012D001A551B /* libKnowed.a */; };
+		471615B6192D01C1001A551B /* KBBLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 471615B5192D01C1001A551B /* KBBLayoutConstraint.m */; };
 		477B9E1D192CF39E007EB250 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477B9E1C192CF39E007EB250 /* Foundation.framework */; };
 		477B9E1F192CF39F007EB250 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477B9E1E192CF39F007EB250 /* CoreGraphics.framework */; };
 		477B9E21192CF39F007EB250 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477B9E20192CF39F007EB250 /* UIKit.framework */; };
 		477B9E27192CF39F007EB250 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 477B9E25192CF39F007EB250 /* InfoPlist.strings */; };
 		477B9E29192CF39F007EB250 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 477B9E28192CF39F007EB250 /* main.m */; };
 		477B9E2D192CF39F007EB250 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 477B9E2C192CF39F007EB250 /* AppDelegate.m */; };
-		477B9E30192CF39F007EB250 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 477B9E2E192CF39F007EB250 /* Main_iPhone.storyboard */; };
-		477B9E33192CF39F007EB250 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 477B9E31192CF39F007EB250 /* Main_iPad.storyboard */; };
+		477B9E30192CF39F007EB250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 477B9E2E192CF39F007EB250 /* Main.storyboard */; };
 		477B9E36192CF39F007EB250 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 477B9E35192CF39F007EB250 /* ViewController.m */; };
 		477B9E38192CF39F007EB250 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 477B9E37192CF39F007EB250 /* Images.xcassets */; };
 		477B9E3F192CF39F007EB250 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477B9E3E192CF39F007EB250 /* XCTest.framework */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		471615B0192D0125001A551B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		471615B2192D012D001A551B /* libKnowed.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKnowed.a; path = "../Knowed/build/Debug-iphoneos/libKnowed.a"; sourceTree = "<group>"; };
+		471615B4192D01B9001A551B /* KBBLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBBLayoutConstraint.h; sourceTree = "<group>"; };
+		471615B5192D01C1001A551B /* KBBLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBBLayoutConstraint.m; sourceTree = "<group>"; };
 		477B9E19192CF39E007EB250 /* KnowedPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowedPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		477B9E1C192CF39E007EB250 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		477B9E1E192CF39F007EB250 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,8 +51,7 @@
 		477B9E2A192CF39F007EB250 /* KnowedPad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KnowedPad-Prefix.pch"; sourceTree = "<group>"; };
 		477B9E2B192CF39F007EB250 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		477B9E2C192CF39F007EB250 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		477B9E2F192CF39F007EB250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		477B9E32192CF39F007EB250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		477B9E2F192CF39F007EB250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		477B9E34192CF39F007EB250 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		477B9E35192CF39F007EB250 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		477B9E37192CF39F007EB250 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +60,7 @@
 		477B9E46192CF39F007EB250 /* KnowedPadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KnowedPadTests-Info.plist"; sourceTree = "<group>"; };
 		477B9E48192CF39F007EB250 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		477B9E4A192CF39F007EB250 /* KnowedPadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnowedPadTests.m; sourceTree = "<group>"; };
+		477B9E54192CF43A007EB250 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				471615B3192D012D001A551B /* libKnowed.a in Frameworks */,
+				471615B1192D0125001A551B /* JavaScriptCore.framework in Frameworks */,
 				477B9E1F192CF39F007EB250 /* CoreGraphics.framework in Frameworks */,
 				477B9E21192CF39F007EB250 /* UIKit.framework in Frameworks */,
 				477B9E1D192CF39E007EB250 /* Foundation.framework in Frameworks */,
@@ -84,6 +92,7 @@
 		477B9E10192CF39E007EB250 = {
 			isa = PBXGroup;
 			children = (
+				477B9E54192CF43A007EB250 /* README.md */,
 				477B9E22192CF39F007EB250 /* KnowedPad */,
 				477B9E44192CF39F007EB250 /* KnowedPadTests */,
 				477B9E1B192CF39E007EB250 /* Frameworks */,
@@ -103,6 +112,8 @@
 		477B9E1B192CF39E007EB250 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				471615B2192D012D001A551B /* libKnowed.a */,
+				471615B0192D0125001A551B /* JavaScriptCore.framework */,
 				477B9E1C192CF39E007EB250 /* Foundation.framework */,
 				477B9E1E192CF39F007EB250 /* CoreGraphics.framework */,
 				477B9E20192CF39F007EB250 /* UIKit.framework */,
@@ -114,10 +125,11 @@
 		477B9E22192CF39F007EB250 /* KnowedPad */ = {
 			isa = PBXGroup;
 			children = (
+				471615B4192D01B9001A551B /* KBBLayoutConstraint.h */,
+				471615B5192D01C1001A551B /* KBBLayoutConstraint.m */,
 				477B9E2B192CF39F007EB250 /* AppDelegate.h */,
 				477B9E2C192CF39F007EB250 /* AppDelegate.m */,
-				477B9E2E192CF39F007EB250 /* Main_iPhone.storyboard */,
-				477B9E31192CF39F007EB250 /* Main_iPad.storyboard */,
+				477B9E2E192CF39F007EB250 /* Main.storyboard */,
 				477B9E34192CF39F007EB250 /* ViewController.h */,
 				477B9E35192CF39F007EB250 /* ViewController.m */,
 				477B9E37192CF39F007EB250 /* Images.xcassets */,
@@ -231,9 +243,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				477B9E33192CF39F007EB250 /* Main_iPad.storyboard in Resources */,
 				477B9E38192CF39F007EB250 /* Images.xcassets in Resources */,
-				477B9E30192CF39F007EB250 /* Main_iPhone.storyboard in Resources */,
+				477B9E30192CF39F007EB250 /* Main.storyboard in Resources */,
 				477B9E27192CF39F007EB250 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +266,7 @@
 			files = (
 				477B9E36192CF39F007EB250 /* ViewController.m in Sources */,
 				477B9E2D192CF39F007EB250 /* AppDelegate.m in Sources */,
+				471615B6192D01C1001A551B /* KBBLayoutConstraint.m in Sources */,
 				477B9E29192CF39F007EB250 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,20 +298,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		477B9E2E192CF39F007EB250 /* Main_iPhone.storyboard */ = {
+		477B9E2E192CF39F007EB250 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				477B9E2F192CF39F007EB250 /* Base */,
 			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		477B9E31192CF39F007EB250 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				477B9E32192CF39F007EB250 /* Base */,
-			);
-			name = Main_iPad.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		477B9E47192CF39F007EB250 /* InfoPlist.strings */ = {
@@ -393,6 +397,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KnowedPad/KnowedPad-Prefix.pch";
 				INFOPLIST_FILE = "KnowedPad/KnowedPad-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ddj/Sources/KnowedStuff/Knowed/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -406,6 +414,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KnowedPad/KnowedPad-Prefix.pch";
 				INFOPLIST_FILE = "KnowedPad/KnowedPad-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ddj/Sources/KnowedStuff/Knowed/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -470,6 +482,7 @@
 				477B9E50192CF39F007EB250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		477B9E51192CF39F007EB250 /* Build configuration list for PBXNativeTarget "KnowedPadTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +491,7 @@
 				477B9E53192CF39F007EB250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
