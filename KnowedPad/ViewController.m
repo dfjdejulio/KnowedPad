@@ -40,7 +40,9 @@
     UIAlertView *alert = [UIAlertView new];
     [alert addButtonWithTitle:@"OK"];
     alert.message = msg;
+    alert.delegate = self;
     [alert show];
+    CFRunLoopRun();
 }
 
 - (NSString *) doPrompt:(NSString *)msg
@@ -49,8 +51,17 @@
     [alert addButtonWithTitle:@"OK"];
     alert.alertViewStyle = UIAlertViewStylePlainTextInput;
     alert.message = msg;
+    alert.delegate = self;
     [alert show];
-    return @"";
+    [[alert textFieldAtIndex:0] becomeFirstResponder];
+    CFRunLoopRun();
+    return [[alert textFieldAtIndex:0] text];
+}
+
+- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    //promptAnswer = [[alertView textFieldAtIndex:0] text];
+    CFRunLoopStop(CFRunLoopGetCurrent());
 }
 
 #pragma mark Lifecycle
