@@ -55,7 +55,8 @@
     [alert show];
     [[alert textFieldAtIndex:0] becomeFirstResponder];
     CFRunLoopRun();
-    return [[alert textFieldAtIndex:0] text];
+    //return [[alert textFieldAtIndex:0] text];
+    return @"This does not work yet.";
 }
 
 - (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
