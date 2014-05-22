@@ -13,7 +13,6 @@
 
 
 @interface ViewController : UIViewController {
-    UIAlertView *alert;
     JSContext *context;
     NSDictionary *inputAttributes;
     NSDictionary *outputAttributes;

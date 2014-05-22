@@ -37,12 +37,19 @@
 
 - (void) doAlert:(NSString *)msg
 {
+    UIAlertView *alert = [UIAlertView new];
+    [alert addButtonWithTitle:@"OK"];
     alert.message = msg;
     [alert show];
 }
 
 - (NSString *) doPrompt:(NSString *)msg
 {
+    UIAlertView *alert = [UIAlertView new];
+    [alert addButtonWithTitle:@"OK"];
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    alert.message = msg;
+    [alert show];
     return @"";
 }
 
@@ -53,13 +60,15 @@
     [super viewDidLoad];
     __weak ViewController *me = self;
     __weak UITextView *output = self.output;
-    alert = [UIAlertView new];
-    [alert addButtonWithTitle:@"OK"];
+
     context = [JSContext new];
 
     knowedUtil = [KnowedUtil new];
     knowedUtil->outBlock = ^(NSString *msg) {
         [me doAlert:msg];
+    };
+    knowedUtil->inBlock = ^(NSString *msg) {
+        return [me doPrompt:msg];
     };
     [knowedUtil addSelfToContext:context];
     
