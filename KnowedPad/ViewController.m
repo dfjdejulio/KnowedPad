@@ -91,6 +91,7 @@
     };
     console = [[KnowedConsole new] initWithOutputBlock:outputBlock];
     [console addSelfToContext:context];
+    [[KnowedFileUtil new] addSelfToContext:context];
 }
 
 - (void)didReceiveMemoryWarning
