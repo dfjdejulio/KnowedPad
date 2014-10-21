@@ -35,27 +35,33 @@
 
 #pragma Internal Use
 
+static void (^stopRunLoop)(UIAlertAction *action) = ^(UIAlertAction *action) {
+    CFRunLoopStop(CFRunLoopGetCurrent());
+};
+
+
 - (void) doAlert:(NSString *)msg
 {
-    UIAlertView *alert = [UIAlertView new];
-    [alert addButtonWithTitle:@"OK"];
-    alert.message = msg;
-    alert.delegate = self;
-    [alert show];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Alert" message:msg preferredStyle: UIAlertControllerStyleAlert];
+
+    UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler: stopRunLoop];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:false completion: nil];
     CFRunLoopRun();
 }
 
 - (NSString *) doPrompt:(NSString *)msg
 {
-    UIAlertView *alert = [UIAlertView new];
-    [alert addButtonWithTitle:@"OK"];
-    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
-    alert.message = msg;
-    alert.delegate = self;
-    [alert show];
-    [[alert textFieldAtIndex:0] becomeFirstResponder];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Prompt" message:msg preferredStyle: UIAlertControllerStyleAlert];
+    [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"response";
+    }];
+    UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:stopRunLoop];
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:false completion:nil];
     CFRunLoopRun();
-    //return [[alert textFieldAtIndex:0] text];
+    // The problem: "CFRunLoopRun()" breaks the keyboard.
     return @"This does not work yet.";
 }
 
